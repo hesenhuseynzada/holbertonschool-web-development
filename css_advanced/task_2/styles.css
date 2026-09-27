@@ -1,509 +1,610 @@
-/********** FONT IMPORT **********/
-@font-face {
-    font-family: "SourceSansPro Light";
-    src: url(./resources/fonts/sourcesanspro-light.otf);
-}
-
-@font-face {
-    font-family: "SourceSansPro Regular";
-    src: url(./resources/fonts/sourcesanspro-regular.otf);
-}
-
-@font-face {
-    font-family: "SourceSansPro Black";
-    src: url(./resources/fonts/sourcesanspro-black.otf);
-}
-
-/********** RESET CSS **********/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
-/********** GENERAL **********/
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url(./fonts/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
 body {
-    font-family: "SourceSansPro Regular", sans-serif;
-    color: #ffffff;
-    background-image: 
-        radial-gradient(circle at center, rgba(10, 22, 39, 0.4) 0%, rgba(10, 22, 39, 0.9) 100%),
-        url(./resources/images/background.png);
-    background-size: cover, auto;
-    background-position: center, top;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed, fixed;
-    /* Can be disabled, non compliant, just for style ;) */
-    background-color: #0a1627;
+	background-image: url("./images/assets/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-main {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+header {
+	/* background-color: blueviolet; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 35px 171px 0 171px;
+	height: 32px;
+	padding: 0px;
+
 }
 
-h1 {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 40px;
+p, h1, h2, h3 {
+	font-family: 'Source Sans Pro';
+	color: #FFFFFF;
 }
 
-h1 span {
-    font-family: "SourceSansPro Regular", sans-serif;
-    font-weight: 700;
-    color: #c271ff;
+.menu {
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 234px;
+	height: 15px;
+	top: 37px;
+	left: 1041px;
+}
+
+.menu p {
+	/* background-color: blue; */
+	width: 34px;
+	height: 15px;
+	left: 200px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 15px;
+	text-align: left;
+}
+
+.smile img {
+	/* background-color: green; */
+	width: 167px;
+	height: 29px;
+	top: 35px;
+	left: 171px;
+}
+
+.register {
+	height: 957px;
+	/* outline: 2px solid lime; */
+	/* background-color: aqua; */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 70px;
+}
+.schooled {
+	/* outline: 2px solid lime; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	box-sizing: border-box;
+	height: 300px;
+	margin: 115px 0 0 0;
+
+}
+.schooled h1 {
+	/* outline: 2px solid lime; */
+	/* background-color: green; */
+	width: 700px;
+	height: 151px;
+	font-family: 'Source Sans Pro';
+	font-size: 120px;
+	font-weight: 700;
+	line-height: 150px;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 40px 0 0 0;
+}
+
+.schooled p {
+	/* outline: 2px solid blue; */
+	/* background-color: chartreuse; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	word-spacing: 60px;
+	width: 300px;
+	margin: 0 0 40px 0;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
 }
 
 button {
-    padding: 15px 20px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    background-color: #c271ff;
-    box-shadow: 0px 2px 20px 0px #00000080;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #C271FF;
+	width: 162px;
+	height: 44px;
+	border: none;
+	box-shadow: 0px 2px 20px 0px #00000080;
+	font-family: 'Source Sans Pro';
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17.6px;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 50px;
 }
 
-button:hover {
-    transform: scale(1.1);
+.pros {
+	/* outline: 2px solid rgb(255, 0, 0); */
+	width: 1009px;
+	height: 350px;
+	/* background-color: crimson; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	margin-top: 150px;
+}
+.pros h2 {
+	/* background-color: aquamarine; */
+	/* outline: 2px solid blue; */
+	color: #FFFFFF;
+	width: 300px;
+	height: 40px;
+	font-family: 'Source Sans Pro';
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 40px;
+	text-align: center;
 }
 
-.italic {
-    font-style: italic;
+.pros span {
+	color: #C271FF;
+	font-weight: 700;
 }
 
-/********** HEADER **********/
-header {
-    width: 1100px;
-    height: 30px;
-    margin: 35px auto;
+.avatars {
+	margin-top: 70px;
+	width: 1009px;
+	height: 237px;
+	/* outline: 2px solid greenyellow; */
+	/* background-color: aqua; */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.avatars img {
+	width: 150px;
+	height: 150px;
 }
 
-#nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.avatars h3 {
+	font-family: 'Source Sans Pro';
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 27px;
+	text-align: center;
+	width: 150px;
+	height: 27px;
+	display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	/* outline: 2px solid blue; */
 }
 
-nav {
-    width: 235px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.avatars p {
+	width: 150px;
+	height: 48px;
+	top: 189px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
 }
 
-nav a {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #ffffff;
+
+.testimonial {
+	/* width: 1440px; */
+	height: 392px;
+	top: 1093px;
+	gap: 50px;
+	background-color: #C271FF;
+	display: flex;
+	flex-wrap: wrap;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	/* outline: 2px solid blue; */
 }
 
-nav a:hover {
-    text-decoration: underline;
+.testimonial img {
+	width: 160px;
+	height: 160px;
 }
 
-/********** BANNER SECTION **********/
-/* Banner title block */
-#banner_title_container {
-    padding-top: 125px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.testimonial blockquote {
+	/* outline: 2px solid blue; */
+	width: 730px;
+	height: 68px;
+	font-family: 'Source Sans Pro';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33px;
+	text-align: left;
+	color: #FFFFFF;
 }
 
-#banner_title_container h1 {
-    font-family: "SourceSansPro Black", sans-serif;
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 150px;
+.testimonial p {
+	width: 129px;
+	height: 34px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 33px;
+	text-align: left;
+	margin-top: 25px;
 }
 
-#banner_title_container p {
-    width: 300px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
+.testimonial em {
+	width: 165px;
+	height: 34px;
+	top: 124px;
+	font-family: 'Source Sans Pro';
+	font-size: 22px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 33px;
+	text-align: left;
+	color: #FFFFFF;
 }
 
-/* Banner pros block */
-#banner_pros_container {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.tutorials {
+	/* outline: 2px solid red; */
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 80px 0;
 }
 
-#banner_pros_container h2 {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 40px;
+.videos {
+	/* outline: 2px solid blue; */
+	width: 1228px;
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-#banner_pros_container h2 span {
-    font-family: "SourceSansPro Regular", sans-serif;
-    font-weight: 700;
-    color: #c271ff;
+.tutorial {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* outline: 2px solid green; */
+	width: 255px;
+	height: 335px;
+}
+.tutorials h1 {
+	/* outline: 2px solid green; */
+	width: 350px;
+	height: 40px;
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 40px;
+	text-align: center;
+	color: #071629;
+	margin-bottom: 80px;
 }
 
-#banner_pros_infos_container {
-    width: 1000px;
-    margin-top: 125px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.tutorials h1 span {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+	color: #C271FF;
+}
+.tutorial h2 {
+	display: flex;
+	/* outline: 2px solid rgb(0, 162, 255); */
+	width: 106px;
+	height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: left;
+	color: #071629;
+	margin-left: 15px;
+
 }
 
-.banner_pros_infos {
-    text-align: center;
+.tutorial p {
+	display: flex;
+	justify-content: space-around;
+	/* outline: 2px solid orange; */
+	width: 240px;
+	height: 48px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #07162980;
+	margin-left: 15px;
 }
 
-.banner_pros_infos img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.preview {
+	/* outline: 2px solid lime; */
+	width: 255px;
+	height: 154px;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
-.banner_pros_infos h3 {
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 25px;
+.play {
+	/* outline: 2px solid yellow; */
+	width: 64px;
+	height: 64px;
+	position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+	z-index: 1;
+    /* transform: translate(90px, -110px); */
 }
 
-.banner_pros_infos p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    font-style: italic;
+.tutorial .rating {
+	/* outline: 2px solid yellowgreen; */
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	height: 15px;
+	margin-left: 15px;
 }
 
-/********** QUOTE SECTION **********/
-#quote {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c271ff;
+.tutorial .rating img {
+	/* outline: 2px solid yellowgreen; */
+	margin-right: 15px;
+	width: 15px;
+	height: 15px;
 }
 
-/* Hidden h1 to pass W3C htmml validator */
-#quote h1 {
-    display: none;
+.tutorial .rating p {
+	/* outline: 2px solid yellowgreen; */
+	width: 35px;
+	height: 15px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height:15px;
+	text-align: right;
+	color: #C271FF;
+	margin-left: auto;
+	margin-right: 15px;
 }
 
-#quote_container {
-    width: 900px;
-    height: 160px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 30px;
+.tutorial .author {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 15px;
 }
 
-#quote_container img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+.tutorial .author img {
+	width: 30px;
+	height: 30px;
 }
 
-#quote_infos_container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.tutorial .author h3 {
+	width: 200px;
+	height: 27px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 27px;
+	text-align: left;
+	color: #C271FF;
+	margin-left: 15px;
 }
 
-#quote_infos_container blockquote {
-    font-family: "SourceSansPro Light", sans-serif;
+.membership {
+	height: 502px;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #071629;
 }
 
-#quote_infos_container p {
-    font-weight: 700;
+.membership h1 {
+	width: 250px;
+	height: 40px;
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 40px;
+	text-align: center;
+	margin: 30px 0 0 0;
 }
 
-#quote_infos_container p.italic {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-weight: 500;
+.membership h1 span {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+	color: #C271FF;
 }
 
-/********** VIDEOS SECTION **********/
-#videos {
-    width: 100%;
-    margin: auto;
-    padding: 75px;
-    color: #071629;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
+.membership .smiles {
+	/* outline: 3px solid red; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1140px;
 }
 
-#videos_container {
-    padding: 75px 75px 0 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+.membership .smiles div {
+	/* outline: 3px solid greenyellow; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 257px;
+	height: 153px;
 }
 
-.solo_video_container {
-    width: 255px;
-    height: 335px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.membership img {
+	width: 43px;
+	height: 35px;
 }
 
-.video {
-    position: relative;
-    cursor: pointer;
+.membership h2 {
+	width: 256px;
+	height: 26px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 26px;
+	text-align: center;
 }
 
-.video img {
-    display: block;
-    border-radius: 5px 5px 0 0;
+.membership p {
+	width: 212px;
+	height: 52px;
+	opacity: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+	text-align: center;
 }
 
-.video::after {
-    content: url("./resources/images/play-button.svg");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 64px;
-    height: 64px;
-    transform: translate(-50%, -50%);
+.membership button {
+	margin: 0 0 30px 0;
 }
 
-.solo_video_container h2 {
-    padding: 0 15px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
+.faq {
+	margin: 60px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	/* outline: 3px solid slateblue; */
+	height: 707px;
 }
 
-.solo_video_container p {
-    padding: 0 15px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: justify;
-    color: #848a93;
+.faq h1 {
+	width: 136px;
+	height: 75px;
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 75px;
+	text-align: center;
+	color: #071629;
 }
 
-.video_creator_container {
-    padding: 0 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+.faq .questions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* outline: 3px solid orchid; */
+	width: 920px;
+	height: 707px;
+	margin: 50px 0;
 }
 
-.video_creator_container img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.faq .questions .row  {
+	/* outline: 3px solid green; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.video_creator_container h3 {
-    margin-left: 15px;
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 27px;
-    color: #c271ff;
+.faq .questions .column  {
+	width: 350px;
+	height: 242px;
+	/* outline: 3px solid red; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.stats_container {
-    width: 100%;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.faq .questions .column h2 {
+	width: 145px;
+	height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: left;
+	color: #071629;
 }
 
-.stats_container p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 27px;
-    color: #c271ff;
+.faq .questions .column p {
+	width: 350px;
+	height: 192px;
+	opacity: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color: #07162980;
 }
 
-.star {
-    width: 15px;
-    height: 15px;
-    color: #c271ff;
+.footer {
+	height: 249px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #071629;
 }
 
-.star.empty {
-    color: #dddddd;
+.footer .logos {
+	width: 1140px;
+	/* outline: 3px solid green; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 60px 0 0 0;
 }
 
-/********** MEMBERSHIP SECTION **********/
-#membership {
-    width: 100%;
-    height: 500px;
-    padding: 75px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #071629;
+.footer .logos .social {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 130px;
+	height: 30px;
+	/* outline: 3px solid blue; */
 }
 
-#membership_container {
-    padding: 75px 0 60px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.footer .logos img {
+	width: 169px;
+	height: 30px;
+	padding: 0.02px 0px 0.52px 0.59px;
 }
 
-.membership_infos {
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.footer .logos .social img {
+	width: 30px;
+	height: 30px;
 }
 
-.membership_infos p {
-    width: 200px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
-}
-
-/********** FAQ SECTION **********/
-#faq {
-    padding: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #071629;
-    background-color: #ffffff;
-}
-
-#faq h1 {
-    font-size: 60px;
-    font-weight: 300;
-    line-height: 75px;
-}
-
-#faq_container {
-    width: 900px;
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 75px;
-}
-
-.faq_infos_container {
-    display: flex;
-    gap: 220px;
-}
-
-.faq_infos {
-    width: 350px;
-}
-
-.faq_infos h2 {
-    margin-bottom: 25px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-}
-
-.faq_infos p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #848a93;
-}
-
-/********** FAQ SECTION **********/
-footer {
-    width: 100%;
-    height: 250px;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #071629;
-}
-
-footer p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #848a93;
-}
-
-#footer_container {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#social_media_icon_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    transition: 0.2s ease-in-out;
-}
-
-#social_media_icon_container a {
-    transition: 0.2s ease-in-out;
-}
-
-#social_media_icon_container a:hover {
-    transform: scale(1.1);
-}
-
-.social_media_icon {
-    width: 30px;
-    height: 30px;
-    fill: #ffffff;
-    cursor: pointer;
+.footer p {
+	width: 96px;
+	height: 15px;
+	opacity: 35%;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	text-align: left;
+	margin: 0 0 20px 0;
 }
