@@ -3,6 +3,7 @@
 Hello
 How are you
 How you been
+<img src"images\0.png">
 
 ## <a href="https://github.com/hesenhuseynzada/holbertonschool-web-development/tree/d01346c23f84bf9d57b1f6d359e7ab949f9f7a59/html_advanced">HTML advanced</a>
 
