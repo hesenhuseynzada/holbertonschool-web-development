@@ -30,11 +30,13 @@
 body {
     font-family: "SourceSansPro Regular", sans-serif;
     color: #ffffff;
-    background-image: url(./resources/images/background.png);
-    background-size: auto;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: 
+        radial-gradient(circle at center, rgba(10, 22, 39, 0.4) 0%, rgba(10, 22, 39, 0.9) 100%),
+        url(./resources/images/background.png);
+    background-size: cover, auto;
+    background-position: center, top;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
     /* Can be disabled, non compliant, just for style ;) */
     background-color: #0a1627;
 }
