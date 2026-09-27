@@ -19,6 +19,7 @@ header {
     padding: 20px 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 10%;
 }
 
@@ -29,7 +30,6 @@ header {
     color: white;
     font-weight: 700;
     font-size: 12px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -73,7 +73,6 @@ header {
     color: white;
     font-weight: 700;
     font-size: 14px;
-    text-transform: uppercase;
     text-align: center;
 }
 
