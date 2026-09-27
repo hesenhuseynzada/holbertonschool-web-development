@@ -1,17 +1,42 @@
-# <p align="center">Holberton Web Development</p>
+<img  height="50px" align="right" src="./resources/images/holberton_school_logo.png" alt="Holberton School logo">
 
-Hello
-How are you
-How you been
+# Web Development
 
-<img src="./images/7.png">
+<details>
+        <summary>
+		CLICK TO ENLARGE 😇
+        </summary>
+	    📄 <a href="#description">Description</a>
+        <br>
+        📂 <a href="#files-description">Files description</a>
+        <br>
+        ♥️ <a href="#thanks">Thanks</a>
+        <br>
+        👷 <a href="#authors">Authors</a>
+</details>
 
-## <a href="https://github.com/hesenhuseynzada/holbertonschool-web-development/tree/d01346c23f84bf9d57b1f6d359e7ab949f9f7a59/html_advanced">HTML advanced</a>
+## 📄 <span id="description">Description</span>
 
-In this project, we are asked to create an HTML from a wireframe using a figma file as instructions.
-Please take a look at how I twisted the instruction of this project just for the fun
+All these projects were completed as part of the Holberton School curriculum. The goal was to learn the fundamentals of web development by implementing a webpage from a design file from scratch.
 
-## <a href="https://github.com/hesenhuseynzada/holbertonschool-web-development/tree/d01346c23f84bf9d57b1f6d359e7ab949f9f7a59/css_advanced">CSS advanced</a>
+Below is the mockup design for the webpage:
 
-In this project, we are asked to create the CSS styling of the HTML page of the previous project.
-Using the indication provided by the figma file, I recreated the style as close as possible, the result is however not responsive.
+<img src="./resources/images/smileschool_final_design.png" alt="">
+
+You can compare it with the final deployed version by clicking [here](https://fchavonet.github.io/holbertonschool-web-development/css_advanced/).
+<br>
+The site is not responsive, so for a better comparison with the reference image, I recommend testing it on a computer.
+<br>
+On a mobile device, the experience may not be optimal, but please bear in mind that responsiveness was not the focus of this exercise.
+
+I also need to do some optimization on the final CSS, but keep in mind that we only had one day for this part. I might come back to refine it later.
+
+## 📂 <span id="files-description">File description</span>
+
+| **FILE**       | **DESCRIPTION**                                      |
+| :------------: | ---------------------------------------------------- |
+| `html_advanced`| Directory containing the HTML structure of the site. |
+| `resources`    | Contains the resources required for the repository.  |
+| `README.md`    | The readme file you are currently reading 😉.        |   
+
+## ♥️ <span id="thanks">Thanks</span>
