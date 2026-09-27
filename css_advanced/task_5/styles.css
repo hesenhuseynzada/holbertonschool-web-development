@@ -1,232 +1,327 @@
-@import url(holberton_school-icon/style.css);
-@import url(holberton_school-icon/style.scss);
-
-/* #region ROOT */
-
-:root {
-    --color-white: #ffffff;
-    --color-dark: #071629;
-    --color-purple: #c271ff;
-    --color-light-purple: #d6a7f9;
-    --color-grey: #979797;
-    --font-family: 'Source Sans Pro', sans-serif;
-}
-
-/* #endregion */
-
-
-/* #region GLOBAL */
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: var(--font-family);
-}
-
-.off-screen {
-    left: -100vw;
-    position: absolute;
-}
-
-/* #endregion */
-
-
-/* #region TEXT */
-
-.text-primary {
-    color: var(--color-purple) !important;
-}
-
-.text-secondary {
-    color: var(--color-dark) !important;
-}
-
-.getschooledbitch {
-    font-size: 7.5rem;
-}
-
-.coiny {
-    font-family: 'Coiny', cursive;
-}
-
-.coiny-size {
-    font-size: 2rem;
-}
-
-/* #endregion */
-
-
-/* #region BACKGROUND */
-
-.homepage {
-    background-image: url('images/pic_1.jpg');
+.bg-image {
+    background-image: url(./assets/Header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    color: white;
 }
 
-.pricing {
-    background-image: url('images/pic_2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+header {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
 }
 
-.courses {
-    background-image: url('images/pic_3.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.menu a {
+    all: unset;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
-/* #endregion */
-
-
-/* #region BUTTON */
-
-.btn, .btn:hover, .btn:focus {
-    background-color: var(--color-purple);
-    border-color: var(--color-purple);
+.main-section {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
 }
 
-.btn:hover, .btn-focus {
-    opacity: 0.9;
+.get-schooled-section {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-shadow {
-    box-shadow: 0 0 10px 5px rgba(56, 56, 56, 0.813);
+.get-schooled-section h1 {
+    font-size: 120px;
+    font-weight: 700;
 }
 
-/* #endregion */
-
-
-/* #region NAV LINX */
-
-li a:hover, li a:focus {
-    color: var(--color-purple) !important;
-    text-decoration: none;
+.smiles-grin-laugh {
+    display: flex;
 }
 
-.navbar-toggler {
-    font-size: 2.25rem;
-    top: 3rem;
+.smiles-grin-laugh p {
+    margin-right: 20px;
+    font-weight: 700;
 }
 
-/* #endregion */
-
-
-/* #region CAROUSEL */
-
-.bg-purple {
-    background-color: var(--color-purple) !important;
+.register-btn {
+    all: unset;
+    margin: 40px;
+    padding: 20px 40px;
+    background-color: #C271FF;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
-.bg-dark {
-    background-color: var(--color-dark) !important;
+.learn-section {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.bg-light-purple {
-    background-color: var(--color-light-purple) !important;
+.pros {
+    display: flex;
+    justify-content: center;
 }
 
-.play {
-    height: 125px;
-    width: 125px;
+.avatar-container {
+
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
 }
 
-.card-img-overlay {
-    height: 5rem;
-    width: 5rem;
+.avatar {
+    height: 150px;
+    width: 150px;
 }
 
-/* #endregion */
-
-
-/* #region SEARCH */
-
-.search {
-    color: var(--color-light-purple);
-    font-size: 1.4375rem;
-    opacity: .8;
+.avatar-container h3 {
+    margin: 10px 0;
 }
 
-::placeholder {
-    color: lightgray;
-    font-size: 1.75rem;
-    opacity: .5 !important;
+.avatar-container p {
+    text-align: center;
+    width: 150px;
 }
 
-.search:before {
-    font-family: 'holberton_school-icon';
-    content: "\e912";
-    color: var(--color-white);
+.testimonials {
+    height: 50vh;
+    background-color: #C271FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-bar {
-    background-color: var(--color-light-purple);
+.testimonials-container {
+    display: flex;
 }
 
-.border-tlr {
-    border-top-left-radius: .25rem;
+.testimonial {
+    color: white;
+    width: 730px;
+    margin-left: 50px;
 }
 
-.form-control {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: 1px #d296ff;
+blockquote {
+
+    font-size: 22px;
 }
 
-.form-control:hover {
-    background-color: var(--color-light-purple);
+.testimonial p {
+    margin: 20px 0;
+    font-size: 22px;
 }
 
-.form-control:active {
-    background-color: var(--color-light-purple) !important;
+.tutorials {
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.form-control:focus {
-    background-color: var(--color-light-purple) !important;
+.tutorials h1 {
+    font-size: 32px;
+    color: #071629;
 }
 
-.dropdown-item:hover {
-    color: var(--color-purple) !important;
-    background-color: var(--color-white);
+.tutorials span {
+    color: #C271FF;
 }
 
-/* #endregion */
+.tutorials-container {
+    display: flex;
 
-
-/* #region FOOTER */
-
-.fb-icon:before {
-    font-family: 'holberton_school-icon';
-    content: "\e908";
-    color: var(--color-white);
 }
 
-.twitter-icon:before {
-	font-family: 'holberton_school-icon';
-	content: "\e90f";
-	color: var(--color-white);
+.video-container {
+    width: 255px;
+    margin-right: 40px;
 }
 
-.ig-icon:before {
-	font-family: 'holberton_school-icon';
-	content: "\e90a";
-	color: var(--color-white);
+.video {
+    height: 154px;
+    width: 255px;
 }
 
-.small-icon {
-    font-size: 2rem;
+.video-container h2 {
+    margin: 20px 0;
+    font-size: 16px;
 }
 
-.holberton_school-icon-check {
-    padding-top: 1.28rem;
-    font-size: 1.752rem;
+.video-container h3 {
+    margin: 20px 0;
+    color: #C271FF;
+    font-size: 14px;
 }
 
-/* #endregion */
+.video-container p {
+    color: #07162980;
+    font-size: 14px;
+}
+
+.tuto {
+    display: flex;
+    align-items: center;
+}
+
+.tuto img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.tutolrial-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutolrial-footer p {
+    color: #C271FF;
+}
+
+.membership {
+    height: 80vh;
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.membership h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.membership span {
+    color: #C271FF;
+}
+
+.membership-container {
+    display: flex;
+}
+
+.member {
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.member img {
+    height: 36px;
+    width: 44px;
+}
+
+.member h2 {
+    margin: 20px 0;
+}
+
+.member p {
+    text-align: center;
+}
+
+.register-free-btn {
+    all: unset;
+    margin: 40px;
+    padding: 20px 40px;
+    background-color: #C271FF;
+    border-radius: 25px;
+    cursor: pointer;   
+    color: white;
+}
+
+.faq {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faq h1 {
+    font-size: 60px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+.faq-line {
+    display: flex;
+    gap: 50px;
+}
+
+.div {
+    width: 400px;
+}
+
+.div p {
+    text-align: justify;
+    margin: 20px 0;
+    color: #07162980;
+}
+
+footer {
+    background-color: #071629;
+    height: 20vh;
+
+}
+
+.footer-container {
+    height: 100%;
+    margin: 0 15%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer img {
+    height: 20px;
+    width: 114px;
+}
+
+.social-container {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.social-container a img {
+    height: 30px; 
+    width: 30px;
+    margin: 0 10px;
+}
+
+.footer-container p {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
