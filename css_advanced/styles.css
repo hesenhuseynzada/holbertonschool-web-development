@@ -1,507 +1,327 @@
-/********** FONT IMPORT **********/
-@font-face {
-    font-family: "SourceSansPro Light";
-    src: url(./resources/fonts/sourcesanspro-light.otf);
-}
-
-@font-face {
-    font-family: "SourceSansPro Regular";
-    src: url(./resources/fonts/sourcesanspro-regular.otf);
-}
-
-@font-face {
-    font-family: "SourceSansPro Black";
-    src: url(./resources/fonts/sourcesanspro-black.otf);
-}
-
-/********** RESET CSS **********/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
-/********** GENERAL **********/
-body {
-    font-family: "SourceSansPro Regular", sans-serif;
-    color: #ffffff;
-    background-image: url(./resources/images/background.png);
-    background-size: auto;
-    background-position: top;
+.bg-image {
+    background-image: url(./assets/Header.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* Can be disabled, non compliant, just for style ;) */
-    background-color: #0a1627;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
 }
 
-main {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+header {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
 }
 
-h1 {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 40px;
-}
-
-h1 span {
-    font-family: "SourceSansPro Regular", sans-serif;
-    font-weight: 700;
-    color: #c271ff;
-}
-
-button {
-    padding: 15px 20px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    background-color: #c271ff;
-    box-shadow: 0px 2px 20px 0px #00000080;
-    transition: 0.2s ease-in-out;
+.menu a {
+    all: unset;
+    margin-right: 20px;
     cursor: pointer;
 }
 
-button:hover {
-    transform: scale(1.1);
-}
-
-.italic {
-    font-style: italic;
-}
-
-/********** HEADER **********/
-header {
-    width: 1100px;
-    height: 30px;
-    margin: 35px auto;
-}
-
-#nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    width: 235px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/********** BANNER SECTION **********/
-/* Banner title block */
-#banner_title_container {
-    padding-top: 125px;
+.main-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 90%;
 }
 
-#banner_title_container h1 {
-    font-family: "SourceSansPro Black", sans-serif;
+.get-schooled-section {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-schooled-section h1 {
     font-size: 120px;
     font-weight: 700;
-    line-height: 150px;
 }
 
-#banner_title_container p {
-    width: 300px;
-    margin-bottom: 50px;
+.smiles-grin-laugh {
     display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
 }
 
-/* Banner pros block */
-#banner_pros_container {
-    margin-top: 150px;
+.smiles-grin-laugh p {
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.register-btn {
+    all: unset;
+    margin: 40px;
+    padding: 20px 40px;
+    background-color: #C271FF;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.learn-section {
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#banner_pros_container h2 {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 40px;
-}
-
-#banner_pros_container h2 span {
-    font-family: "SourceSansPro Regular", sans-serif;
-    font-weight: 700;
-    color: #c271ff;
-}
-
-#banner_pros_infos_container {
-    width: 1000px;
-    margin-top: 125px;
-    margin-bottom: 100px;
+.pros {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.avatar-container {
+
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 180px;
 }
 
-.banner_pros_infos {
-    text-align: center;
-}
-
-.banner_pros_infos img {
-    width: 150px;
+.avatar {
     height: 150px;
-    border-radius: 50%;
+    width: 150px;
 }
 
-.banner_pros_infos h3 {
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 25px;
+.avatar-container h3 {
+    margin: 10px 0;
 }
 
-.banner_pros_infos p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-    font-style: italic;
+.avatar-container p {
+    text-align: center;
+    width: 150px;
 }
 
-/********** QUOTE SECTION **********/
-#quote {
-    width: 100%;
-    height: 400px;
+.testimonials {
+    height: 50vh;
+    background-color: #C271FF;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c271ff;
 }
 
-/* Hidden h1 to pass W3C htmml validator */
-#quote h1 {
-    display: none;
-}
-
-#quote_container {
-    width: 900px;
-    height: 160px;
+.testimonials-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+}
+
+.testimonial {
+    color: white;
+    width: 730px;
+    margin-left: 50px;
+}
+
+blockquote {
+
     font-size: 22px;
-    font-weight: 500;
-    line-height: 30px;
 }
 
-#quote_container img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+.testimonial p {
+    margin: 20px 0;
+    font-size: 22px;
 }
 
-#quote_infos_container {
-    height: 100%;
+.tutorials {
+    height: 78vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-#quote_infos_container blockquote {
-    font-family: "SourceSansPro Light", sans-serif;
-}
-
-#quote_infos_container p {
-    font-weight: 700;
-}
-
-#quote_infos_container p.italic {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-weight: 500;
-}
-
-/********** VIDEOS SECTION **********/
-#videos {
-    width: 100%;
-    margin: auto;
-    padding: 75px;
+.tutorials h1 {
+    font-size: 32px;
     color: #071629;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
 }
 
-#videos_container {
-    padding: 75px 75px 0 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+.tutorials span {
+    color: #C271FF;
 }
 
-.solo_video_container {
+.tutorials-container {
+    display: flex;
+
+}
+
+.video-container {
     width: 255px;
-    height: 335px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-right: 40px;
 }
 
 .video {
-    position: relative;
-    cursor: pointer;
+    height: 154px;
+    width: 255px;
 }
 
-.video img {
-    display: block;
-    border-radius: 5px 5px 0 0;
-}
-
-.video::after {
-    content: url("./resources/images/play-button.svg");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 64px;
-    height: 64px;
-    transform: translate(-50%, -50%);
-}
-
-.solo_video_container h2 {
-    padding: 0 15px;
+.video-container h2 {
+    margin: 20px 0;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
 }
 
-.solo_video_container p {
-    padding: 0 15px;
+.video-container h3 {
+    margin: 20px 0;
+    color: #C271FF;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: justify;
-    color: #848a93;
 }
 
-.video_creator_container {
-    padding: 0 15px;
+.video-container p {
+    color: #07162980;
+    font-size: 14px;
+}
+
+.tuto {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
     align-items: center;
 }
 
-.video_creator_container img {
-    width: 30px;
+.tuto img {
     height: 30px;
-    border-radius: 50%;
+    width: 30px;
+    margin-right: 10px;
 }
 
-.video_creator_container h3 {
-    margin-left: 15px;
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 27px;
-    color: #c271ff;
-}
-
-.stats_container {
-    width: 100%;
-    padding: 0 15px;
+.tutolrial-footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
-.stats_container p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 27px;
-    color: #c271ff;
+.tutolrial-footer p {
+    color: #C271FF;
 }
 
-.star {
-    width: 15px;
-    height: 15px;
-    color: #c271ff;
-}
-
-.star.empty {
-    color: #dddddd;
-}
-
-/********** MEMBERSHIP SECTION **********/
-#membership {
-    width: 100%;
-    height: 500px;
-    padding: 75px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.membership {
+    height: 80vh;
     background-color: #071629;
-}
-
-#membership_container {
-    padding: 75px 0 60px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.membership_infos {
-    width: 250px;
-    height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.membership_infos p {
-    width: 200px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
+.membership h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.membership span {
+    color: #C271FF;
+}
+
+.membership-container {
+    display: flex;
+}
+
+.member {
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.member img {
+    height: 36px;
+    width: 44px;
+}
+
+.member h2 {
+    margin: 20px 0;
+}
+
+.member p {
     text-align: center;
 }
 
-/********** FAQ SECTION **********/
-#faq {
-    padding: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #071629;
-    background-color: #ffffff;
+.register-free-btn {
+    all: unset;
+    margin: 40px;
+    padding: 20px 40px;
+    background-color: #C271FF;
+    border-radius: 25px;
+    cursor: pointer;   
+    color: white;
 }
 
-#faq h1 {
+.faq {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faq h1 {
     font-size: 60px;
-    font-weight: 300;
-    line-height: 75px;
 }
 
-#faq_container {
-    width: 900px;
-    margin-top: 75px;
+.faq-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 75px;
+    justify-content: space-evenly;
+    height: 60%;
 }
 
-.faq_infos_container {
+.faq-line {
     display: flex;
-    gap: 220px;
+    gap: 50px;
 }
 
-.faq_infos {
-    width: 350px;
+.div {
+    width: 400px;
 }
 
-.faq_infos h2 {
-    margin-bottom: 25px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
+.div p {
+    text-align: justify;
+    margin: 20px 0;
+    color: #07162980;
 }
 
-.faq_infos p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #848a93;
-}
-
-/********** FAQ SECTION **********/
 footer {
-    width: 100%;
-    height: 250px;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background-color: #071629;
+    height: 20vh;
+
 }
 
-footer p {
-    font-family: "SourceSansPro Light", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #848a93;
+.footer-container {
+    height: 100%;
+    margin: 0 15%;
 }
 
-#footer_container {
-    width: 1000px;
+.footer {
     display: flex;
+    flex-wrap: wrap;
+    width: 100;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-#social_media_icon_container {
+
+.footer img {
+    height: 20px;
+    width: 114px;
+}
+
+.social-container {
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    transition: 0.2s ease-in-out;
+    justify-content: end;
 }
 
-#social_media_icon_container a {
-    transition: 0.2s ease-in-out;
-}
-
-#social_media_icon_container a:hover {
-    transform: scale(1.1);
-}
-
-.social_media_icon {
+.social-container a img {
+    height: 30px; 
     width: 30px;
-    height: 30px;
-    fill: #ffffff;
-    cursor: pointer;
+    margin: 0 10px;
+}
+
+.footer-container p {
+    width: 100%;
+    text-align: center;
+    color: white;
 }
